@@ -1,0 +1,476 @@
+@charset "UTF-8";
+/* CSS Document */
+
+ /* fonts  */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700|Josefin+Sans:400,700);
+					/*/////////////////////////////General Shit///////////////////////////////*/
+
+
+
+body {
+	background-color: #f1f3f2;
+	background-image: url(Images/bg-6-full.jpg);
+    background-repeat: repeat;
+	background-size: 50% 30%;
+		z-index: -1;
+
+}
+
+/* Colors
+White: #f5f9fa
+White 2: #e9eaed
+Black: #323c46
+Orange: #f67d00
+Blue: #16ade9
+  */
+  
+					/*/////////////////////////////Text///////////////////////////////*/
+
+
+h1 {
+	color: #f5f9fa;
+	margin-left: 5%; 
+	font-family: 'Josefin Sans', sans-serif;
+
+}
+
+
+#blogheader h1 {
+	color: #f5f9fa;
+	margin-left: 2.5%; 
+width: 40%; 
+float: left; 
+font-size: 35px;
+}
+
+
+
+h4 {
+	color: #f5f9fa;
+	margin-left: 5%; 
+
+}
+
+
+#blogpost h2 {
+	color: #323c46;
+	margin-left: 20px; 
+	margin-right: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+#blogpost h3 {
+	color: #f67d00;
+	margin-left: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+#blogpost p {
+	color: #323c46;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 10px; 
+	font-size:16px; 
+
+	}
+
+					/*/////////////////////////////NavBar///////////////////////////////*/
+
+#navbartop {
+	background-color: #323c46; 
+	z-index: 2;
+}
+
+#logo {
+	color: #f8f9fa; 
+	font-family: gearus serif; 
+	margin-left: 40px;
+	margin-top: 0px; 
+	margin-bottom: 0px; 
+	font-size: 30px;
+	
+} 
+
+#logo span {
+	color: #f8f9fa; 
+	font-size: 20px;
+	
+}
+
+#logo small {
+	color: #f8f9fa; 
+	font-family: gearus ; 
+	font-size: 16px; 
+	text-transform: none;
+	}
+
+#navfooter {
+	background-color: #f67d00; 
+	z-index: 2000; 
+	float: left;
+	width: 100%;
+	height: 10px;
+
+}
+
+#defaultNavbar1 ul li  {
+	
+	margin-right: 150px; 
+	font-family: 'Raleway', sans-serif;
+}
+
+#defaultNavbar1 ul li :hover{
+	background-color: #f67d00;
+	color: #323c46; 
+
+}
+
+#defaultNavbar1 ul li a {
+	
+	color: #f8f9fa; 
+}
+
+#defaultNavbar1 ul li a :hover{
+	
+	color: #323c46; 
+	font-weight: bold;
+}
+
+
+
+					/*/////////////////////////////Content///////////////////////////////*/
+
+
+#separator { 
+background-color: #323c46; 
+position: relative; 
+	bottom: 60px;
+	height: 1px;
+}
+
+
+#blogheader { 
+background-color: #16ade9; 
+overflow: hidden;
+	height: 70px;
+	border-top: 10px solid #323c46;
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	}
+
+#mainwrapper {
+	position: relative; 
+	bottom: 40px;
+}
+
+					/*/////////////////////////////BlogPosts///////////////////////////////*/
+
+
+
+#blogpost {
+	width: 66%;
+	min-width: 500px;
+	margin-left: 3%; 
+position: relative;
+top: 60px; 
+	float: left;
+	padding: 0px;
+	border-right: 1.5px solid #323c46; 
+	
+
+	}
+	
+	
+#blogpost ol {
+	
+	margin: 20px; 
+	margin-left: 50px; 
+	border-top: 1px solid orange; 
+	border-bottom: 1px solid #f67d00; 
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800; 
+	width: 75%; 
+	font-size: 16px; 
+
+
+	}
+	
+#blogpost p {
+		font-family: 'Raleway', sans-serif;
+}
+	
+	
+	
+	
+#sidebar {
+	width: 27%;
+	margin-right: 2%; 
+	margin-left: 2%; 
+	padding: 5px;
+	float: right;
+	overflow: auto;
+	height: 80%;
+	position: relative;
+top: 60px;
+
+}
+
+
+#sidebar #sidebar-title {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300; 
+	font-size: 35px; 
+	text-align: center; 
+	border-bottom: 5px solid #f67d00; 
+
+}
+
+.thumbnail {
+	border: none; 
+	
+}
+
+
+
+.allposts {
+	margin: none;
+	padding: auto; 
+	overflow: auto;
+	diplay: inline;
+}
+
+.posts {
+	margin: auto; 
+	float: left;
+	diplay: inline;
+	border: 3px solid #323c46; 
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #e9eaed;
+	margin-top: 20px;
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+
+
+
+}
+
+
+
+.posts img {
+	width: 100%;
+	
+	background-image: fill;
+	
+}
+
+.posts .caption {
+	background-color: #e9eaed;
+}
+
+
+
+#bannerImage {
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	width: 95%;
+	background-image: url("http://blog.controlgroup.com/wp-content/uploads/2015/07/Feastly.png");
+	background-size: 100%;
+	border: 2px solid #323c46;
+	border-radius: 2px;
+
+}
+
+#topbanner {
+	background-image: url(Images/152403526.jpg);
+	background-image: contain;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+	height: 200px; 
+	position: relative; 
+	bottom: 22px;
+	z-index: 0;
+}
+
+
+					/*/////////////////////////////Social Media CSS///////////////////////////////*/
+
+
+
+#share-buttons-top {
+float: right; 
+width: 300px; 
+margin-top: 10px;
+
+
+}
+
+#share-buttons-top img {
+border: 0;
+box-shadow: 0;
+display: inline;
+margin: 10px;
+width: 12%; 
+
+}
+
+#share-buttons-bottom {
+float: right; 
+margin-right: 10px;
+margin-bottom: 10px;
+}
+
+#share-buttons-bottom img {
+width: 35px;
+border: 0;
+box-shadow: 0;
+display: inline;
+margin: 5px;
+}
+
+
+					/*/////////////////////////////Comment Box///////////////////////////////*/
+
+#commentbox {
+		background-color: #e9eaed; 
+		height: 200px;
+		width: 100%; 
+		-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	border-top: 7px solid #16ade9;
+	position: relative;
+top: 60px;
+	}
+
+
+
+
+
+#commentboxleft button  {
+	
+	background-color: #323c46; 
+	color: #f5f9fa; 
+	border-radius: 5px;
+	margin-left: 5%;
+} 
+
+#commentboxleft h3 {
+	
+		margin-left: 5%; 
+
+}
+
+
+#commentboxleft textarea {
+	width: 90%;
+	margin-left: 5%; 
+	margin-right: 5%; 
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	border-radius: 5px;	
+
+} 
+
+#commentboxleft {
+	
+	width: 50%; 
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2%;
+	float: left;
+}
+
+#commentboxright {
+	
+	width: 30%; 
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 2%;
+	float: right;
+}
+#commentboxright ul{
+	list-style: none;
+	background-color: white; 
+	border: 2px solid #323c46;
+	height: 100px;
+	color: #323c46;
+	-webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	-moz-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.37);
+		border-radius: 5px;	
+
+}
+
+					/*/////////////////////////////Footer///////////////////////////////*/
+					
+footer {
+	background-color: #323c46;
+}
+
+
+
+
+
+
+
+/* General */
+
+.container {
+  width: 960px;
+}
+
+
+/* Header */
+
+.header {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #ddd;
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  
+  font-size: 17px;
+  padding: 15px;
+}
+
+
+/* Menu */ 
+
+.header .menu {
+  float: right;
+  list-style: none;
+  margin-top: 5px;
+}
+
+.menu > li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu a {
+  color: #898989;
+}
+
+/* Dropdown */
+
+.dropdown-menu {
+  font-size: 16px;
+  margin-top: 5px;
+  min-width: 105px;
+}
+
+.dropdown-menu li a {
+  color: #898989;
+  padding: 6px 20px;
+  font-weight: 300;
+}
+
+
